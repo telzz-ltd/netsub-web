@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Use Node.JS
-      - uses: oven-sh/setup-bun@v2
+      - name: Use BunJS
+        uses: oven-sh/setup-bun@v2
       - run: bun ci
       - run: bun run build
